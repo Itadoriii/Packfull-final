@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Game of Grow</title>
+</head>
+<body>
+	
+	<nav class="menu" id="menu">
+		
+		<div class="contenedor contenedor-botones-menu">
+			<button id="btn-menu-barras" class="btn-menu-barras"><i class="fas fa-bars"></i></button>
+			<button id="btn-menu-cerrar" class="btn-menu-cerrar"><i class="fas fa-times"></i></button>
+		</div>
+		<div class="logo">
+			<img src="img/logoweb.png">
+		</div>
+		<div class="contenedor contenedor-enlaces-nav">
+			<div class="btn-departamentos" id="btn-departamentos">
+				<p>Todos nuestros <span>Productos</span></p>
+				<i class="fas fa-caret-down"></i>
+			</div>
+			<div class="search">
+				<form action="#">
+					<input class="barra" type="text"
+						placeholder=" Que vas a comprar . . . "
+						name="search">
+					<button>
+						<i class="fa fa-search"
+							style="font-size: 18px;">
+						</i>
+					</button>
+				</form>
+			</div>
+			<div class="enlaces">
+				<a href="#">Carrito</a>
+				
+			</div>
+		</div>
+
+		<div class="contenedor contenedor-grid">
+			<div class="grid" id="grid">
+				<div class="categorias">
+					<button class="btn-regresar"><i class="fas fa-arrow-left"></i> Regresar</button>
+					<h3 class="subtitulo">Categorias</h3>
+
+					<a href="#" data-categoria="Semillas">Semillas <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="Cultivo">Cultivo <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="Packs">Packs <i class="fas fa-angle-right"></i></a>
+					<a href="#" data-categoria="Fumar">Pa fumar <i class="fas fa-angle-right"></i></a>
+				</div>
+
+				<div class="contenedor-subcategorias">
+					<div class="subcategoria " data-categoria="Semillas">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Semillas</h3>
+							<a href="#">Autoflorecientes</a>
+							<a href="#">Feminizadas</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./img/img semillas/bsf seeds.jpg" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./img/img semillas/dutch passion.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/img semillas/sensi seeds.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/img semillas/sweet seeds.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/img semillas/delirium seeds.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="Cultivo">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Cultivo</h3>
+							<a href="#">Fertilizantes</a>
+							<a href="#">Sustratos</a>
+							<a href="#">Herramientas</a>
+							<a href="#">Preventivos</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./img/img cultivo/pack biobizz.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./img/img cultivo/canna sustrato.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/img cultivo/tri pack.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/img cultivo/top crop.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/img cultivo/tiojeras.jpg" alt="">
+							</a>
+						</div>
+					</div>
+
+					<div class="subcategoria" data-categoria="Packs">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Packs</h3>
+							<a href="#">Kit Indoor 60x60</a>
+							<a href="#">Kit Indoor 80x80</a>
+							<a href="#">Kit Indoor 120x 120</a>
+							<a href="#">Kit anti olor</a>
+							<a href="#">Semilla + Fertilizante</a>
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./img/img pack/pack.jpg" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./img/img pack/kit-indoor-150.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/img pack/Kit-Indoor-250w-web.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/img pack/400.jpg" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/img pack/FILTRO-DE-OLOR-100X200-GROWCENTER-GROW-SHOP.jpg" alt="">
+							</a>
+						</div>
+					</div>
+
+				
+					<div class="subcategoria" data-categoria="Fumar">
+						<div class="enlaces-subcategoria">
+							<button class="btn-regresar"><i class="fas fa-arrow-left"></i>Regresar</button>
+							<h3 class="subtitulo">Pa fumar</h3>
+							<a href="#">Moledores</a>
+							<a href="#">Parafernalia fumeta</a>
+							<a href="#">Bonglab</a>
+							
+						</div>
+
+						<div class="banner-subcategoria">
+							<a href="#">
+								<img src="./img/juegos-banner-1.png" alt="">
+							</a>
+						</div>
+
+						<div class="galeria-subcategoria">
+							<a href="#">
+								<img src="./img/juegos-galeria-1.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/juegos-galeria-2.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/juegos-galeria-3.png" alt="">
+							</a>
+							<a href="#">
+								<img src="./img/juegos-galeria-4.png" alt="">
+							</a>
+						</div>
+					</div>
+
+					
+
+					
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<main class="contenedor">
+		
+			<div class="page-content">
+				<div class="product-container">
+					<h3>nombre</h3>
+					<img src="img/img carrusel/carrusel 1.jpg" />
+					<h1>$50</h1>
+					<button class="button-add" onclick="add('product-1', 50)">Agregar</button>
+				</div>
+				<div class="product-container">
+					<h3>nombre</h3>
+					<img src="img/img carrusel/carrusel 2.jpg" />
+					<h1>$50</h1>
+					<button class="button-add" onclick="add('product-1', 50)">Agregar</button>
+				</div>
+				<div class="product-container">
+					<h3>nombre</h3>
+					<img src="img/img carrusel/carrusel 3.jpg" />
+					<h1>$50</h1>
+					<button class="button-add" onclick="add('product-1', 50)">Agregar</button>
+				</div>
+			<div class="page-content">
+				<div class="product-container">
+					<h3>nombre</h3>
+					<img src="img/img carrusel/carrusel 1.jpg" />
+					<h1>$50</h1>
+					<button class="button-add" onclick="add('product-1', 50)">Agregar</button>
+				</div>
+				<div class="product-container">
+					<h3>nombre</h3>
+					<img src="img/img carrusel/carrusel 2.jpg" />
+					<h1>$50</h1>
+					<button class="button-add" onclick="add('product-1', 50)">Agregar</button>
+				</div>
+				<div class="product-container">
+					<h3>nombre</h3>
+					<img src="img/img carrusel/carrusel 3.jpg" />
+					<h1>$50</h1>
+					<button class="button-add" onclick="add('product-1', 50)">Agregar</button>
+				</div>
+			<div class="page-content">
+				<div class="product-container">
+					<h3>nombre</h3>
+					<img src="img/img carrusel/carrusel 1.jpg" />
+					<h1>$50</h1>
+					<button class="button-add" onclick="add('product-1', 50)">Agregar</button>
+				</div>
+				<div class="product-container">
+					<h3>nombre</h3>
+					<img src="img/img carrusel/carrusel 2.jpg" />
+					<h1>$50</h1>
+					<button class="button-add" onclick="add('product-1', 50)">Agregar</button>
+				</div>
+				<div class="product-container">
+					<h3>nombre</h3>
+					<img src="img/img carrusel/carrusel 3.jpg" />
+					<h1>$50</h1>
+					<button class="button-add" onclick="add('product-1', 50)">Agregar</button>
+				</div>
+		
+				
+			</div>
+		
+	</main>
+	<footer>
+		<div class="contenedorfooter">
+			<div class="tiendas"> 
+				<h1>Nuestras Tiendas</h1>
+				<p>Quinta Normal</p>
+				<p>Independencia</p>
+			</div>
+			<div class="redes">
+				<h1>Nuestras redes sociales</h1>
+				<div class="facebook">
+					<img src="img/footer/fb.png">
+					<label>Siguenos en Facebook</label>
+				</div>
+				<div class="instagram">
+					<img src="img/footer/ig.png">
+					<label>Siguenos en Instagram</label>
+				</div>					
+			</div>
+			
+		</div>
+	</footer>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
