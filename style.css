@@ -393,7 +393,10 @@ button {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
+.product-container h3{
+	text-align: center;
+	padding-top: 10px;
+}
 .product-container {
     margin: 15px;
     padding: 2px 16px;
@@ -401,6 +404,7 @@ button {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
     background-color: white;
 }
+
 
 .product-container:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -412,7 +416,8 @@ button {
 
 .product-container h1 {
     margin-bottom: 10px;
-    margin-left: 15px;
+	margin-left: 10px;
+    text-align: left;
 }
 
 .button-add {
