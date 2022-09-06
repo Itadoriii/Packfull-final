@@ -1,0 +1,22 @@
+{
+  "name": "gameofgrow",
+  "version": "1.0.0",
+  "description": "Desarrollo de un sitio para una growshop local",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Itadoriii/Growshop.git"
+  },
+  "author": "Sebastian Castro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Itadoriii/Growshop/issues"
+  },
+  "homepage": "https://github.com/Itadoriii/Growshop#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
