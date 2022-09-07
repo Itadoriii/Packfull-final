@@ -40,12 +40,12 @@ const productos = [
     }
 ]
 
-
 app.get('/api/productos', (req, res) => {
   res.send(productos)
-})
+});
+
 app.use('/',express.static("Tienda"));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
-})
+});

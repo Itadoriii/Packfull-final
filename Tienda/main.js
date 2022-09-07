@@ -1,3 +1,34 @@
+
+let products = [];
+let total = 0;
+
+function add(product, price) {
+    console.log(product, price);
+    products.push(product);
+    total = total + price;
+    document.getElementById("checkout").innerHTML = `Pagar $${total}`
+}
+
+
+
+function displayProducts(productList) {
+    let productsHTML = '';
+    productList.forEach(element => {
+        productsHTML +=
+        `<div class="product-container">
+            <h3>${element.name}</h3>
+            <img src="${element.imagen}" />
+            <h1>$${element.precio}</h1>
+            <button class="button-add" onclick="add(${element.id}, ${element.precio})">Agregar</button>
+        </div>`
+    });
+    document.getElementById('page-content').innerHTML = productsHTML;
+}
+window.onload = async()=>{
+	const productos = await(await fetch("/api/productos")).json();
+	console.log(productos);
+	displayProducts(productos);
+} 	
 const btnDepartamentos = document.getElementById('btn-departamentos'),
 	  btnCerrarMenu = document.getElementById('btn-menu-cerrar'),
 	  grid = document.getElementById('grid'),
