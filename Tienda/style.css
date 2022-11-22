@@ -12,7 +12,7 @@ body {
 /* contenido footer */
 .pie-pagina{
     width: 100%;
-    background-color:#108017;
+    background-color:#303E73;
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -50,7 +50,7 @@ body {
     line-height: 45px;
     color: #fff;
     margin-right: 10px;
-    background-color:#0b5710;
+    background-color:#AA4639;
     text-align: center;
     transition: all 300ms ease;
 }
@@ -58,7 +58,7 @@ body {
     color:#4CAF50
 }
 .pie-pagina .grupo-2{
-    background-color:#0b5710;
+    background-color:#AA4639;
     padding: 15px 10px;
     text-align: center;
     color: #fff;
@@ -92,7 +92,7 @@ main article {
 }
 header{
 	display: flex;
-	background: #108017;
+	background: #303E73;
 }
 .search input[type=text]{
 	width:300px;
@@ -107,7 +107,7 @@ header{
 }
 	  
 .search button{
-	background-color:#0b5710;
+	background-color:#AA4639;
 	color: #f2f2f2;
 	float: right;
 	padding: 5px 10px;
@@ -119,12 +119,12 @@ header{
 .logo{
 	padding-left: 100px;
 	display: flex;
-	background: #108017;
+	background: #303E73;
 	padding: 10px;
 
 }
 .logo img{
-	height: 30px;
+	height: 100px;
 	width: auto;
 	display: flex;	
 	margin: 0 auto;
@@ -288,7 +288,7 @@ header{
 /* Enlaces del NAV */
 /* ------------------------- */
 .menu {
-	background: #108017;
+	background: #303E73;
 	padding: 5px 0;
 	margin-bottom: 20px;
 }
@@ -410,7 +410,7 @@ header{
 /* ------------------------- */
 
 .grid .btn-regresar {
-	background: #108017;
+	background: #AA4639;
 	color: #fff;
 	border: none;
 	padding: 10px;
@@ -559,51 +559,63 @@ button {
 }
 
 .page-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.product-container h3{
-	text-align: center;
-	padding-top: 10px;
-}
-.product-container {
-    margin: 15px;
-    padding: 2px 16px;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
-    background-color: white;
-}
-
-
-.product-container:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding-left: 140px;
+	padding-right: 270px;
+	
+	
   }
-
-.product-container img {
-    width: 300px;
-}
-
-.product-container h1 {
-    margin-bottom: 10px;
-	margin-left: 10px;
-    text-align: left;
-}
-
-.button-add {
-    background-color: white;
-    color: black;
-    border: 2px solid #4CAF50; /* Green */
-    transition-duration: 0.4s;
-    position: absolute;
-    right: 15px;
-    bottom: 10px;
-}
+  .card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	max-width: 300px;
+	min-width: 300px;
+	margin: auto;
+	text-align: center;
+	font-family: arial;
+	margin-top: 20px;
+   
+  }
   
-.button-add:hover {
-    background-color: #4CAF50; /* Green */
-    color: white;
-}
+  
+  
+  .card button {
+	border: none;
+	outline: 0;
+	padding: 12px;
+	color: white;
+	background-color: #AA4639;
+	text-align: center;
+	cursor: pointer;
+	width: 100%;
+	font-size: 18px;
+  
+  }
+  
+  .card button:hover {
+	opacity: 0.7;
+  }
+  .card img{
+	max-width: 300px;
+	min-width: 300px;
+	min-height: 300px;
+	max-height: 300px;
+	
+  }
+  .product div{
+	display: inline-block;
+	vertical-align: top;
+  
+  }
+  
+  .img-producto img{
+  
+	max-width: 500px;
+	min-width: 500px;
+	min-height: 500px;
+	max-height: 500px;
+  }
 article {
 	height: 100vh;
 	align-items: stretch;
@@ -651,7 +663,7 @@ article {
 		justify-content: flex-start;
 		position: fixed;
 		left: 0;
-		background: #0b5710;
+		background: #AA4639;
 		height: 100vh;
 		width: 80%;
 		z-index: 2000;

@@ -5,39 +5,62 @@ const port = 3000
 const productos = [
     {
         id:1,
-        name: "Nombre",
+        name: "Calendario 1",
         precio: 50,
-        imagen: "img/img carrusel/carrusel 3.jpg",
-        stock: 30
+        imagen: "img/Productos/calendario1.jpg",
+        stock: 30,
+        descripcion: "calendario"
     },
     {
         id:1,
-        name: "Nombre",
-        precio: 50,
-        imagen: "img/img carrusel/carrusel 3.jpg",
-        stock: 30
+        name: "Caja AMONG US",
+        precio: 12000,
+        imagen: "img/Productos/caja amongus.png",
+        stock: 30,
+        descripcion: "100 cajas, precio efectivo",
+        tipo: "caja"
     },
     {
         id:1,
-        name: "Nombre",
-        precio: 50,
-        imagen: "img/img carrusel/carrusel 3.jpg",
-        stock: 30
+        name: "Papel antigrasa",
+        precio: 7000,
+        imagen: "img/Productos/papel antigrasa.png",
+        stock: 30,
+        descripcion: "calendario"
     },
     {
         id:1,
-        name: "Nombre",
-        precio: 50,
-        imagen: "img/img carrusel/carrusel 3.jpg",
-        stock: 30
+        name: "Caja Spiderman",
+        precio: 13000,
+        imagen: "img/Productos/caja spiderman.png",
+        stock: 30,
+        descripcion: "calendario"
     },
     {
         id:1,
-        name: "Nombre",
-        precio: 50,
-        imagen: "img/img carrusel/carrusel 3.jpg",
-        stock: 30
+        name: "Funda vasos",
+        precio: 9000,
+        imagen: "img/Productos/fundas para vasos.jpg",
+        stock: 30,
+        descripcion: "calendario"
+    },
+    {
+        id:1,
+        name: "Autoarmables",
+        precio: 7000,
+        imagen: "img/Productos/autoarmables.png",
+        stock: 30,
+        descripcion: "calendario"
+    },
+    {
+        id:1,
+        name: "Caja Generica",
+        precio: 7000,
+        imagen: "img/Productos/caja generica.jpg",
+        stock: 30,
+        descripcion: "calendario"
     }
+    
 ]
 
 app.get('/api/productos', (req, res) => {

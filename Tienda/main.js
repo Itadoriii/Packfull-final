@@ -15,14 +15,15 @@ function displayProducts(productList) {
     let productsHTML = '';
     productList.forEach(element => {
         productsHTML +=
-        `<div class="product-container">
-            <h3>${element.name}</h3>
-            <img src="${element.imagen}" />
-            <h1>$${element.precio}</h1>
-            <button class="button-add" onclick="add(${element.id}, ${element.precio})">Agregar</button>
+        `<div class="card" id="${element.name}">
+        <img src="${element.imagen}" alt="${element.name}" style="width:100%">
+        <h1>${element.name}</h1>
+        <p>$${element.precio}</p>
+        <p><button onclick="displayInformation('${element.name}','${element.imagen}','${element.precio}','${element.descripcion}')" id="botoncarrito" >Detalles del Producto</button></p>
         </div>`
     });
     document.getElementById('page-content').innerHTML = productsHTML;
+
 }
 window.onload = async()=>{
 	const productos = await(await fetch("/api/productos")).json();
