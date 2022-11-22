@@ -25,11 +25,31 @@ function displayProducts(productList) {
     document.getElementById('page-content').innerHTML = productsHTML;
 
 }
+
 window.onload = async()=>{
 	const productos = await(await fetch("/api/productos")).json();
 	console.log(productos);
 	displayProducts(productos);
 } 	
+function displayInformation(name,imagen,precio,descripcion,){
+    let informacion = "";
+    console.log(name);
+    console.log(imagen);
+    informacion +=
+        `<div class ="product">
+            <div class ="img-producto">
+            <img src="${imagen}" alt="${name}" style="width:100%">
+            </div>
+            <div class ="informacion">
+			<a>flecha
+            <h1>${name}</h1>
+            <h2>Precio unitario neto:${precio}</h2>
+            <h2>Descripcion:${descripcion}</h2>
+            </div>
+        </div>`
+	document.getElementById('page-content').innerHTML = informacion;
+    
+}
 const btnDepartamentos = document.getElementById('btn-departamentos'),
 	  btnCerrarMenu = document.getElementById('btn-menu-cerrar'),
 	  grid = document.getElementById('grid'),
