@@ -1,14 +1,4 @@
 
-let products = [];
-let total = 0;
-
-function add(product, price) {
-    console.log(product, price);
-    products.push(product);
-    total = total + price;
-    
-}
-
 
 
 function displayProducts(productList) {
@@ -31,10 +21,9 @@ window.onload = async()=>{
 	console.log(productos);
 	displayProducts(productos);
 } 	
+
 function displayInformation(name,imagen,precio,descripcion,){
     let informacion = "";
-    console.log(name);
-    console.log(imagen);
     informacion +=
         `<div class ="product">
             <div class ="img-producto">
@@ -234,3 +223,97 @@ btnCerrarMenu.addEventListener('click', (e)=> {
 	dotActive.classList.remove("carousel_dot__active");
 	newDotActive.classList.add("carousel_dot__active");
  }
+ function insertbusqueda(productList,categoria) {
+    let productsHTML = '';
+    productList.forEach(element => {
+		if(element.busqueda==categoria){
+		productsHTML +=
+        `<div class="card" id="${element.name}">
+        <img src="${element.imagen}" alt="${element.name}" style="width:100%">
+        <h1>${element.name}</h1>
+        <p>$${element.precio}</p>
+        <p><button onclick="displayInformation('${element.name}','${element.imagen}','${element.precio}','${element.descripcion}')" id="botoncarrito" >Detalles del Producto</button></p>
+        </div>`
+		}
+    
+    });
+    document.getElementById('page-content').innerHTML = productsHTML;
+
+}
+ // seccion link 
+ document.getElementById('loadautoarmables').addEventListener('click',function(e){
+	e.preventDefault();
+	let productsHTML = '';
+	document.getElementById('page-content').innerHTML = productsHTML;
+	productsHTML +=
+		`<div class="card" id="Autoarmables">
+        <img src="img/Productos/autoarmables.png" alt="Autoarmables" style="width:100%">
+        <h1>Autoarmables</h1>
+        <p>$7000</p>
+        <p><button onclick="displayInformation('Autoarmables','img/Productos/autoarmables.png','7000','muy bonita')" id="botoncarrito" >Detalles del Producto</button></p>
+        </div>`
+	productsHTML +=
+		`<div class="card" id="Caja generica">
+        <img src="img/Productos/caja generica.jpg" alt="Autoarmables" style="width:100%">
+        <h1>Caja generica</h1>
+        <p>$7000</p>
+        <p><button onclick="displayInformation('Autoarmables','img/Productos/caja generica.jpg','7000','muy bonita')" id="botoncarrito" >Detalles del Producto</button></p>
+        </div>`
+	document.getElementById('page-content').innerHTML = productsHTML;
+  	});
+
+
+ document.getElementById('loadpersonalizadas').addEventListener('click',function(e){
+	e.preventDefault();
+	let productsHTML = '';
+	document.getElementById('page-content').innerHTML = productsHTML;
+	productsHTML +=
+		`<div class="card" id="Caja Spiderman">
+        <img src='img/Productos/caja spiderman.png' alt="Caja Spiderman" style="width:100%">
+        <h1>Caja Spiderman</h1>
+        <p>$12000</p>
+        <p><button onclick="displayInformation('Caja Spiderman','img/Productos/caja spiderman.png','7000','muy bonita')" id="botoncarrito" >Detalles del Producto</button></p>
+        </div>`
+	productsHTML +=
+		`<div class="card" id="Caja AMONG US">
+        <img src="img/Productos/caja amongus.png" alt="Caja Among us" style="width:100%">
+        <h1>Caja AMONG US</h1>
+        <p>$12000</p>
+        <p><button onclick="displayInformation('Caja AMONG US','img/Productos/caja amongus.png','12000','muy bonita')" id="botoncarrito" >Detalles del Producto</button></p>
+        </div>`
+	document.getElementById('page-content').innerHTML = productsHTML;
+  	});
+
+
+ document.getElementById('loadcalendarios').addEventListener('click',function(e){
+	e.preventDefault();
+	let productsHTML = '';
+	document.getElementById('page-content').innerHTML = productsHTML;
+	productsHTML +=
+		`<div class="card" id="Calendario">
+        <img src="img/Productos/calendario1.jpg" alt="Autoarmables" style="width:100%">
+        <h1>Calendario 1</h1>
+        <p>$50</p>
+        <p><button onclick="displayInformation('Autoarmables','img/Productos/calendario1.jpg','50','2022/2023')" id="botoncarrito" >Detalles del Producto</button></p>
+        </div>`
+	
+	document.getElementById('page-content').innerHTML = productsHTML;
+  	});
+
+
+ document.getElementById('loadantigrasa').addEventListener('click',function(e){
+	e.preventDefault();
+	let productsHTML = '';
+	document.getElementById('page-content').innerHTML = productsHTML;
+	productsHTML +=
+		`<div class="card" id="Papel antigrasa">
+        <img src="img/Productos/papel antigrasa.png" alt="Autoarmables" style="width:100%">
+        <h1>Papel antigrasa</h1>
+        <p>$7000</p>
+        <p><button onclick="displayInformation('Papel antigrasa','img/Productos/papel antigrasa.png','7000','2022/2023')" id="botoncarrito" >Detalles del Producto</button></p>
+        </div>`
+	
+	document.getElementById('page-content').innerHTML = productsHTML;
+  	});
+
+

@@ -9,7 +9,8 @@ const productos = [
         precio: 50,
         imagen: "img/Productos/calendario1.jpg",
         stock: 30,
-        descripcion: "calendario"
+        descripcion: "calendario",
+        busqueda: "autoarmable"
     },
     {
         id:1,
